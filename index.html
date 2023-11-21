@@ -13,10 +13,18 @@ body {
 </p>
 <p2> play some mario while your here</p2>
 
-<iframe width="50%" height="50%" src="https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fmario-remix-boss-edition.xml" frameborder="0" allowfullscreen=""></iframe>  
-div id="waflashContainer"> <canvas class="waflashCanvas" id="canvas" tabindex="1" width="640" height="480" style="cursor: default; --waf-content-width: 725px; --waf-content-height: 550px;" waf-content-width="725" waf-content-height="550" waf-content-fps="25"></canvas>
+body dir="ltr"><script>
+		var gameConfig = {
+			swfUrl: "https://cdn.jsdelivr.net/gh/stepdfoel/template@edcd00ab81576f5106f95cc38f956884b44f5c3f/src/mario-remix-boss-edition.swf"		
+		}
+</script>
+<div id="waflashContainer">
+<canvas class="waflashCanvas" id="canvas" tabindex="1" width="1920" height="456" style="cursor: default; --waf-content-width: 725px; --waf-content-height: 550px;" waf-content-width="725" waf-content-height="550" waf-content-fps="25"></canvas>
 <div id="waflashStatus" style="display: none;">Playing..</div>
 <script>
+		var ua = navigator.userAgent.toLowerCase();
+		if ( (navigator.appName =='Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) {
+    		var waf = document.getElementById('waflashStatus');
   
 </body>
 </html>
