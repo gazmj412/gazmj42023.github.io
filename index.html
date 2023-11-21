@@ -1,88 +1,228 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-  background-image: url('https://www.montiboli.com/assets/uploads/hoteles/montiboli/gallery/blog/2017/16-paul-mccartney/paul-mccartney-d.jpg');
-}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - My Bulma Blog</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
 </head>
+
 <body>
-<FONT COLOR="ff0000">
-<p>Well Lads and lasses Subscribe to <a href="https://www.youtube.com/c/gazmj4">Gazmj4</a>  and <a href="https://www.youtube.com/channel/UCy9Jsu2pbfSPj2BPE9gCo6g/videos">Catato Corner</a> 
-</p>
-<p2> play some mario while your here</p2>
+    <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                    <img src="../images/bulma.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="../index.html" class="navbar-item is-active">
+                        Home
+                    </a>
+                    <a href="./pages/about.html" class="navbar-item">
+                        About
+                    </a>
+                    <a href="./pages/blog2.html" class="navbar-item">
+                        Blog 2
+                    </a>
+                    <a href="./pages/landing.html" class="navbar-item">
+                        Landing example 
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Account
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Dashboard
+                            </a>
+                            <a class="navbar-item">
+                                Profile
+                            </a>
+                            <a class="navbar-item">
+                                Settings
+                            </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                Logout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
 
-<body dir="ltr"><script>
-		var gameConfig = {
-			swfUrl: "https://cdn.jsdelivr.net/gh/stepdfoel/template@edcd00ab81576f5106f95cc38f956884b44f5c3f/src/mario-remix-boss-edition.swf"		
-		}
-</script>
-<div id="waflashContainer">
-<canvas class="waflashCanvas" id="canvas" tabindex="1" width="1920" height="456" style="cursor: default; --waf-content-width: 725px; --waf-content-height: 550px;" waf-content-width="725" waf-content-height="550" waf-content-fps="25"></canvas>
-<div id="waflashStatus" style="display: none;">Playing..</div>
-<script>
-		var ua = navigator.userAgent.toLowerCase();
-		if ( (navigator.appName =='Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) {
-    		var waf = document.getElementById('waflashStatus');
-			waf.style.display ='block';
-			waf.innerText ='??? ?????(IE) ??? ??? ???? ???? !\n??, ???? ?? ????? ??????.';
-			gtag('event', 'connect_from_ie', {'event_category': 'error', 'event_label': ua });
-		}
-	</script>
-<script crossorigin="anonymous" type="module">
-		let is_mobile = /Mobi/i.test(window.navigator.userAgent);
-		if (is_mobile) {
-			function scrollToSubject() {
-				try {
-					window.scrollTo({
-						top: 100,
-						left: 0,
-						behavior: 'smooth'
-					});
-				} catch (e) {}
-			}
-			scrollToSubject();
-			window.addEventListener("orientationchange", function() {
-				setTimeout(scrollToSubject, 100);
-			});
-		} else {
-			document.getElementById('canvas').focus();
-		}
-		document.getElementById('canvas').addEventListener("keydown", function(ev) {
-			ev.preventDefault();
-			ev.stopPropagation();
-		});
-		document.getElementById('canvas').addEventListener("click", function() {
-			document.getElementById('canvas').focus();
-		});
-		document.addEventListener("mousedown", (function() {
-			const canvasElement = document.getElementById('canvas');
-			let focused = false;
-			return function(ev) {
-				if (ev.target == canvasElement) {
-					if (!focused) {
-						canvasElement.focus();
-						focused = true;
-					}
-				} else {
-					if (focused) {
-						focused = false;
-					}
-				}
-				return true;
-			}
-		})());
-		import {
-			createWaflash
-		} from 'https://cdn.jsdelivr.net/gh/zhit73/wafedit@f5f16cb82c23d4633e4c30f463a4ea835c834e58/wasm/waflash-player.min.js';
-		createWaflash(gameConfig.swfUrl, window.wafOptions || {});
-	</script>
-</div>
-<script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+    <section class="hero is-info is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title has-text-white-bis is-size-1">This a sample Blog for Mr. Homer Jay Simpson<br> This is
+                    purely to show a sample layout and the text can be ignored.</h1>
+            </div>
+        </div>
+    </section>
 
-<script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
-</script><div id="button" class="imgb imgb_vis" style="position: fixed; top: 10%; left: -100px; z-index: 10; display: none;"><a target="_blank" href="https://sites.google.com/site/classroom6x/" title="More of best Classroom 6x Unblocked Games"><img src="https://lh4.googleusercontent.com/lUEWrXMVEr4AdjKISyJahDRJ61bwfvHdpeYm86Djn5U8oCm9dI60NGXSBqad9HUvzTXgqlkosA_hWV-VuXPjzrkGvh3_kNSgYk8ySWzXnDpbBCBiooyBbU8oBy3YBZMDkW8RcRVmDuC0raoeqZBm8kBlqs6c5mdfkJeN2aE68lXS_lcOZ5_F7lIuM6qLVg" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games 6x"></a></div>
-  
+
+    <div class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">A little about Homer's Work life</p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">@homerj</span>
+                                    <span class="tag is-rounded">May 10, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>Homer held over 188 different jobs in the first 400 episodes of The Simpsons. In most
+                                episodes, he works as the nuclear safety inspector at the Springfield Nuclear Power
+                                Plant (in Sector 7-G), a position which he has held since "Homer's Odyssey", the third
+                                episode of the series, despite the fact that he is totally unsuitable for it. </p>
+                            <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. In hac
+                                habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Accumsan lacus vel
+                                facilisis volutpat. Non sodales neque sodales ut etiam.
+                                Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.</p>
+                            <h3 class="has-text-centered">How to properly center tags in bulma?</h3>
+                            <p> At the nuclear plant, Homer is often ignored and completely forgotten by his boss Mr.
+                                Burns, and he constantly falls asleep and neglects his duties. Matt Groening has stated
+                                that he decided to have Homer work at the power plant because of the potential for Homer
+                                to wreak severe havoc.
+                            <pre>level-item</pre>
+                            Voluptat ut farmacium tellus in metus vulputate. Feugiat in fermentum posuere urna nec.
+                            Pharetra convallis posuere morbi leo urna molestie.
+                            Accumsan lacus vel facilisis volutpat est velit egestas. Fermentum leo vel orci porta.
+                            Faucibus interdum posuere lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/homer.png"
+                                    class="author-image" alt="Placeholder image">
+                            </div>
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Sapien eget mi proin sed 🔱</p>
+                                <p class="subtitle is-6 article-subtitle">
+                                    <a href="#">@homerj</a> on February 17, 2020
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est
+                                velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                            </p>
+                            <p>
+                                Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin
+                                fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor
+                                posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                            </p>
+                            <h3 class="has-text-centered">Lectus vestibulum mattis ullamcorper velit sed ullamcorper
+                                morbi. Cras tincidunt lobortis feugiat vivamus.</h3>
+                            <p>
+                                In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis
+                                enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer
+                                feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                                Arcu non sodales neque sodales ut etiam sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+                <!-- START PROMO BLOCK -->
+                <section class="hero is-info is-bold is-small promo-block">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                <i class="fa fa-bell-o"></i> Nemo enim ipsam voluptatem quia.
+                            </h1>
+                            <span class="tag is-black is-medium is-rounded">
+                                Natus error sit voluptatem
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <!-- END PROMO BLOCK -->
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/homer.png"
+                                    class="author-image" alt="Placeholder image">
+                            </div>
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                                <p class="subtitle is-6 article-subtitle">
+                                    <a href="#">@homerj</a> on October 7, 202X
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est
+                                velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                            </p>
+                            <p>
+                                Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin
+                                fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor
+                                posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                            </p>
+                            <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes,
+                                and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                            <p>
+                                In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis
+                                enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer
+                                feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                                Arcu non sodales neque sodales ut etiam sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+            </div>
+
+        </section>
+        <!-- END ARTICLE FEED -->
+    </div>
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //The first argument are the elements to which the plugin shall be initialized
+            //The second argument has to be at least a empty object or a object with your desired options
+            OverlayScrollbars(document.querySelectorAll("body"), {});
+        });
+    </script>
 </body>
+
 </html>
